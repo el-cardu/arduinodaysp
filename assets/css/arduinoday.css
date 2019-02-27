@@ -1,0 +1,85 @@
+@font-face {
+  font-family: Visitor;
+  src: url("../fonts/visitor.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Upheav;
+  src: url("../fonts/upheavtt.ttf");
+  font-weight: normal;
+}
+
+nav .menu {
+  margin-top: 5%;
+  margin-left: 2%;
+  list-style: none; 
+}
+
+nav .menu__home,
+nav .menu__schedule,
+nav .menu__speakers,
+nav .menu__map {
+  text-decoration: none;
+  color: #000;
+  writing-mode: vertical-lr;
+  font-family: Visitor, Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  position: fixed;
+  float: left;
+  display: inline-block;
+  transform: rotate(180deg);
+}
+
+nav .menu__enroll {
+  text-decoration: none;
+  color: #000;
+  position: fixed;
+  font-family: Visitor, Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  margin-top: 31%;
+  transform: rotate(180deg);
+  writing-mode: vertical-rl;
+}
+
+nav .menu__schedule { 
+  margin-top: 15vh; 
+}
+
+nav .menu__speakers { 
+  margin-top: 32vh; 
+}
+
+nav .menu__map { 
+  margin-top: 55vh; 
+}
+
+nav .menu__enroll { 
+  margin-top: 55vh; 
+}
+
+.hero,
+.schedule,
+.speakers,
+.map,
+.sponsors,
+.enroll,
+.footer {
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.hero { margin-top: 30vh; }
+
+.hero--about,
+.hero--countdown,
+.hero--about,
+.schedule,
+.speakers,
+.map,
+.sponsors,
+.enroll,
+.footer {
+  height: 450px;
+}
