@@ -10,16 +10,34 @@
   font-weight: normal;
 }
 
-nav .menu {
-  margin-top: 5%;
-  margin-left: 2%;
-  list-style: none; 
+.hero, .schedule,
+.speakers, .map,
+.sponsors, .enroll,
+.footer {
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
-nav .menu__home,
-nav .menu__schedule,
-nav .menu__speakers,
-nav .menu__map {
+.hero { height: 800px; }
+
+.schedule, .speakers, 
+.map, .sponsors, 
+.enroll, .footer { height: 450px; }
+
+nav {
+  height: 0;
+}
+
+nav .menu {
+  list-style: none;
+}
+
+nav .menu--home__text,
+nav .menu--schedule__text,
+nav .menu--speakers__text,
+nav .menu--map__text,
+nav .menu--enroll__text {
   text-decoration: none;
   color: #000;
   writing-mode: vertical-lr;
@@ -31,19 +49,52 @@ nav .menu__map {
   transform: rotate(180deg);
 }
 
-nav .menu__enroll {
-  text-decoration: none;
-  color: #000;
+nav img {
   position: fixed;
-  font-family: Visitor, Arial, Helvetica, sans-serif;
-  font-size: 1.2rem;
-  margin-top: 31%;
-  transform: rotate(180deg);
-  writing-mode: vertical-rl;
+  display: inline-block;
+  width: 2%;
+  margin-top: -7vh;
+  margin-left: -1vh;
 }
 
-nav .menu__schedule { 
-  margin-top: 15vh; 
+nav .menu {
+  margin-top: 5%;
+  margin-left: 2%;  
+}
+
+
+nav .menu--home { margin-top: 0vh; }
+
+nav .menu--schedule__blue-pin { margin-top: 18vh; position: absolute; }
+nav .menu--schedule__text { margin-top: 18vh; }
+
+nav .menu--speakers__yellow-pin { margin-top: 40vh; position: absolute; }
+nav .menu--speakers__text { margin-top: 40vh; }
+
+nav .menu--map__green-pin { margin-top: 70vh; position: absolute; }
+nav .menu--map__text { margin-top: 70vh; }
+
+nav .menu--home__red-pin { 
+  margin-left: 90vw;
+  margin-top: 60vh;
+  position: absolute;
+}
+
+nav .menu--enroll__text,
+nav .menu--enroll {
+  margin-top: 60vh;
+  margin-left: 90vw; 
+}
+
+
+
+/*
+
+nav .menu--schedule { margin-top: 15vh; }
+
+nav .menu__bluepin { 
+  margin-top: 8vh; 
+  margin-left: -0.2vw;
 }
 
 nav .menu__speakers { 
@@ -56,30 +107,55 @@ nav .menu__map {
 
 nav .menu__enroll { 
   margin-top: 55vh; 
+} */
+
+header .hero--arduino {
+  position: absolute;
+  width: 80vh;
+  height: 40vw;
+  left: 15%;
 }
 
-.hero,
-.schedule,
-.speakers,
-.map,
-.sponsors,
-.enroll,
-.footer {
-  text-align: center;
-  margin-left: 10%;
-  margin-right: 10%;
+header .hero--countdown__display {
+  left: 55%;
+  top: 49.8%;
+  width: 60vh;
+  height: 30vw;
+  position: absolute;
 }
 
-.hero { margin-top: 30vh; }
-
-.hero--about,
-.hero--countdown,
-.hero--about,
-.schedule,
-.speakers,
-.map,
-.sponsors,
-.enroll,
-.footer {
-  height: 450px;
+header .hero--event__name {
+  font-family: Upheav, Arial, Helvetica, sans-serif;
+  font-size: 5vw;
+  top: 28%;
+  left: 52%;
+  position: absolute;
 }
+
+header .hero--event__date {
+  font-family: Visitor, Arial, Helvetica, sans-serif;
+  font-size: 2.5vw;
+  left: 56.5%;
+  top: 38%;
+  position: absolute;
+}
+
+header .hero--countdown_text {
+  font-family: Visitor, Arial, Helvetica, sans-serif;
+  font-size: 2.5vw;
+  left: 59.5%;
+  top: 76%;
+  position: absolute;
+}
+
+footer {  
+  height: 250px; 
+}
+
+.footer__logo--its, 
+.footer__logo--fablab,
+.footer__logo--prefeitura {
+  padding-left: 15%;
+  padding-top: 5%;
+  float: left;
+} 

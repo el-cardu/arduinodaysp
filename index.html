@@ -30,7 +30,7 @@
     <meta property="og:image" content="">
     <meta property="og:image:type" content="image/jpeg">
   
-    <script src=""></script>
+    <script src="assets/js/countdown.js"></script>
 
   </head>
   
@@ -38,26 +38,115 @@
 
     <nav class="nav">
       <ul class="menu">
-       <a class="menu__home" href=""><li>Home</li></a>
-       <a class="menu__schedule" href=""><li>Agenda</li></a>
-       <a class="menu__speakers" href=""><li>Speakers</li></a>
-       <a class="menu__map" href=""><li>Como Chegar</li></a>
-       <a class="menu__enroll" href=""><li>Inscreva-se</li></a>
+        <li class="menu--home__orange-pin">
+          <img class="img-fluid" src="assets/img/orange-pin.svg" alt="">
+        </li>
+        <li class="menu--home">
+          <a class="menu--home__text" href=""><span>Home</span></a>
+        </li>        
+        <li class="menu--schedule__blue-pin">
+          <img class="img-fluid" src="assets/img/blue-pin.svg" alt="">
+        </li>
+        <li class="menu--schedule">
+          <a class="menu--schedule__text" href=""><span>Agenda</span></a>
+        </li>
+        <li class="menu--speakers__yellow-pin">
+          <img class="img-fluid" src="assets/img/yellow-pin.svg" alt="">
+        </li>
+        <li class="menu__speakers">
+          <a class="menu--speakers__text" href=""><span>Speakers</span></a>
+        </li>
+        <li class="menu--map__green-pin">
+          <img class="img-fluid" src="assets/img/green-pin.svg" alt="">
+        </li>
+        <li class="menu__map">
+          <a class="menu--map__text" href=""><span>Como Chegar</span></a>
+        </li>
+        <li class="menu--home__red-pin">
+          <img src="assets/img/red-pin.svg" alt="">
+        </li>
+        <li class="menu__enroll">
+          <a class="menu--enroll__text" href=""><span>Inscreva-se</span></a>
+        </li>
       </ul>
     </nav>
 
-    <header class="hero">
-        <h1 class="hero--arduino">Arduino</h1>
-        <h1 class="hero--countdown">Countdown</h1>
-        <h1 class="hero--about">About</h1>
+    <header class="hero row">
+      <img class="hero--arduino img-fluid" src="assets/img/arduino.svg" alt="">
+      <img class="hero--countdown__display img-fluid" src="assets/img/display.svg" alt="">
+      <span class="hero--countdown_text" id="hero--countdown_text"></span>
+      <h1 class="hero--event__name">Arduino Day</h1>
+      <h2 class="hero--event__date">06 de Abril de 2019</h2>
     </header>
 
-    <section class="schedule"><h1>Schedule</h1></section>
+    <section class="schedule">
+      <img class="schedule--section img-fluid" src="assets/img/schedule.svg" alt="">
+      <h2 class="section--name">Agenda</h2>
+      <h3 class="schedule--hour">Agenda</h2>
+      <table>
+        <tr>
+          <td>Install Fest</td>
+          <td>13h as </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </section>
+
     <section class="speakers"><h1>Speakers</h1></section>
-    <section class="map"><h1>Map</h1></section>
+    <section id="map" class="d-none d-lg-block map">
+      <div class="row">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-4">
+              <p>Rua Vergueiro, 1000 - Paraíso</p>
+              <p>São Paulo - SP</p>
+          </div>
+          <div class="map col-lg-5" id="map">
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC64h5aSIxgQIhhca7rzDQaErgarB7-Yx8&callback=initMap" async defer></script>
+          </div>
+      </div>
+    </section>
     <section class="enroll"><h1>Enroll</h1></section>
     <section class="sponsors"><h1>Sponsors</h1></section>
-    <footer class="footer"><h1>Footer</h1></footer>
+
+    <!--
+    <footer class="footer">
+      <div class="footer__logo--its">
+        <img width="200px" src="./assets/img/logo-footer-its.png" alt="Logo do ITS Brasil">
+      </div>
+      <div class="footer__logo--fablab">
+      <img width="170px" src="./assets/img/logo-footer-fablab.png" alt="Logo do FABLAB LIVRE SP">
+      </div>               
+      <div class="footer__logo--prefeitura">
+        <img width="200px" src="./assets/img/logo-footer-prefeitura.png" alt="Logo da PMSP">
+      </div>                           
+    </footer>-->
     
   </body>
 
