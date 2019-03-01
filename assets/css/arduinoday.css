@@ -174,19 +174,23 @@ header .hero--countdown_text {
 .enroll {
   position: absolute;
   top: 120%;
-  left: 20%;
+  left: 40vh;
   height: 50vh;
   width: 50vw;
 }
 
 footer {  
-  height: 250px; 
+  height: 200px; 
+  margin-top: 100px;
 }
 
-.footer__logo--its, 
-.footer__logo--fablab,
-.footer__logo--prefeitura {
-  padding-left: 15%;
-  padding-top: 5%;
-  float: left;
-} 
+footer span {
+  font-family: Visitor, Arial, Helvetica, sans-serif;
+  line-height: 2em;
+  font-size: 2em;
+
+}
+
+#logos {
+  padding-top: 30px;
+}
