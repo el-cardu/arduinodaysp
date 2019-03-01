@@ -33,22 +33,22 @@
     <script src="assets/js/countdown.js"></script>
 
   </head>
-  
+
   <body>
 
-    <nav class="nav">
+  <nav class="d-none d-lg-block nav">
       <ul class="menu">
         <li class="menu--home__orange-pin">
           <img class="img-fluid" src="assets/img/orange-pin.svg" alt="">
         </li>
         <li class="menu--home">
-          <a class="menu--home__text" href=""><span>Home</span></a>
+          <a class="menu--home__text" href="#"><span>Home</span></a>
         </li>        
         <li class="menu--schedule__blue-pin">
           <img class="img-fluid" src="assets/img/blue-pin.svg" alt="">
         </li>
         <li class="menu--schedule">
-          <a class="menu--schedule__text" href=""><span>Agenda</span></a>
+          <a class="menu--schedule__text" href="#schedule"><span>Agenda</span></a>
         </li>
         <li class="menu--speakers__yellow-pin">
           <img class="img-fluid" src="assets/img/yellow-pin.svg" alt="">
@@ -60,96 +60,265 @@
           <img class="img-fluid" src="assets/img/green-pin.svg" alt="">
         </li>
         <li class="menu__map">
-          <a class="menu--map__text" href=""><span>Como Chegar</span></a>
+          <a class="menu--map__text" href="#map"><span>Como Chegar</span></a>
         </li>
         <li class="menu--home__red-pin">
           <img src="assets/img/red-pin.svg" alt="">
         </li>
         <li class="menu__enroll">
-          <a class="menu--enroll__text" href=""><span>Inscreva-se</span></a>
+          <a class="menu--enroll__text" href="https://www.sympla.com.br/arduinodaysp19__470240" target="_blank"><span>Inscreva-se</span></a>
         </li>
       </ul>
     </nav>
 
-    <header class="hero row">
-      <img class="hero--arduino img-fluid" src="assets/img/arduino.svg" alt="">
-      <img class="hero--countdown__display img-fluid" src="assets/img/display.svg" alt="">
-      <span class="hero--countdown_text" id="hero--countdown_text"></span>
-      <h1 class="hero--event__name">Arduino Day</h1>
-      <h2 class="hero--event__date">06 de Abril de 2019</h2>
+    <!-- HERO WEB && MOBILE -->
+    <header class="hero row container--fluid">
+      <div class="hero--event">
+        <h1 class="hero--event__name">Arduino Day</h1>
+        <h3 class="hero--event__date">06 de Abril de 2019</h3>
+      </div>
+      <div class="d-none d-lg-block hero--arduino">
+       <img class="hero--arduino__display img-fluid" src="assets/img/arduino.svg" alt="">
+       <img class="hero--countdown__display img-fluid" src="assets/img/display.svg" alt="">
+      </div>
+      <img class="d-block d-lg-none d-xl-none hero--arduino__display-mobile img-fluid" src="assets/img/arduino--mobile.png" alt="">
+      <span class="d-none d-lg-block hero--arduino__countdown-text" id="hero--countdown_text"></span>
     </header>
 
-    <!--
-    <section class="schedule container">
-      <div>
-        <img class="schedule--section" src="assets/img/schedule.svg" alt="" width="50%">
-        <h2 class="section--name">Agenda</h2>
-        <h3 class="schedule--hour"></h3>
-        <div class="row">
-          <table >
-            <tr>
-              <td>a</td>
-              <td>b</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              </tr>
-            <tr>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-            </tr>
-          </table>
-        </div>
-      </div>
-    </section>--> 
+    <!--/ HERO WEB && MOBILE -->
 
-    <!--<section class="speakers"><h1>Speakers</h1></section>
-
-     Mapa Web 
-    <section id="mapa-section" class="d-none d-lg-block mapa-section">
-        <div class="row como-chegar">
-            <div class="endereco col-lg-4">
-                <p>Rua Pedroso, 238 - Bela Vista</p>
-                <p>São Paulo - SP</p>
-                <p>01322-010</p>
-            </div>
-            <div class="map col-lg-8" id="map"></div>
-            <script src="" async defer></script>
-        </div>
+    <!-- ENROLL MOBILE 
+    <section class="d-block d-lg-none d-xl-none enroll--mobile">
+      <h3 class="section--name">Inscreva-se</h3>
+      <img src="" alt="">
     </section>
-    Mapa Web -->
+    ENROLL MOBILE -->
 
-    <section class="enroll"><h1><div id="sympla-widget-470240" height="auto"></div> <script src="https://www.sympla.com.br/js/sympla.widget-pt.js/470240"></script></h1>
+    <!-- SCHEDULE -->
+    <section class="schedule container">
 
-    <!-- <section class="sponsors"><h1>Sponsors</h1></section>-->
-    
+      <img src="" alt="">
+      <h2 class="section--name">Agenda</h2>
+
+      <div id="schedule" class="schedule--dez-horas">
+        <h2 class="schedule--hour">10:00</h2>
+        <img src="" alt="">
+        <table class="schedule--talk-block">
+          <tr class="schedule--talk">
+            <td class="schedule--name">Install Fest</td>
+            <td class="schedule--hour__and-local">10h às 18h<br>Espaço Comunidades</td>
+          </tr>
+          <tr class="schedule--talk">
+            <td class="schedule--name">Maria Técnologas</td>
+            <td class="schedule--hour__and-local">10h às 18h<br>Espaço Comunidades</td>
+          </tr>
+          <tr class="schedule--talk">
+            <td class="schedule--name">Hardware Livre</td>
+            <td class="schedule--hour__and-local">10h às 18h<br>Espaço Comunidades</td>
+          </tr>
+          <tr class="schedule--talk">
+            <td class="schedule--name">ETEC Jorge Street</td>
+            <td class="schedule--hour__and-local">10h às 18h<br>Espaço Comunidades</td>
+          </tr>
+          <tr class="schedule--talk">
+            <td class="schedule--name">PyLadies e R Ladies</td>
+            <td class="schedule--hour__and-local">10h às 18h<br>Espaço Comunidades</td>
+          </tr>
+          <tr class="schedule--talk">
+            <td class="schedule--name">Lab das Minas</td>
+            <td class="schedule--hour__and-local">10h às 14h<br>Espaço Comunidades</td>
+          </tr>
+          <tr class="schedule--talk">
+            <td class="schedule--name">Laboratória/Reprograma</td>
+            <td class="schedule--hour__and-local">10h às 14h<br>Espaço Comunidades</td>
+          </tr>
+          <tr class="schedule--talk">
+            <td class="schedule--name">Woman in Blockchain BR</td>
+            <td class="schedule--hour__and-local">10h às 14h<br>Espaço Comunidades</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="schedule--dez-horas-e-meia">
+        <h2 class="schedule--hour">10:30</h2>
+        <img src="" alt="">
+        <table class="schedule--talk-block">
+          <tr class="schedule--talk">
+            <td class="schedule--name">Automação Residencial</td>
+            <td class="schedule--hour__and-local">10h30 às 14h<br>Atividade<br>Espaço 1</td>
+          </tr>
+          <tr class="schedule--talk">
+            <td class="schedule--name">xxxxxxxxxxxxxxx</td>
+            <td class="schedule--hour__and-local">10h30 às 14h<br>Atividade<br>Espaço 1</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="schedule--onze-horas">
+        <h2 class="schedule--hour">11:00</h2>
+        <img src="" alt="">
+        <table class="schedule--talk-block">
+          <tr class="schedule--talk">
+            <td class="schedule--name">Wearables/Arduíno Básico</td>
+            <td class="schedule--hour__and-local">11h às 13h<br>Espaço Oficinas</td>
+          </tr>
+          <tr class="schedule--talk">
+            <td class="schedule--name">Diana Santos</td>
+            <td class="schedule--hour__and-local">11h às 13h<br>Espaço Oficinas</td>
+          </tr>
+          <tr class="schedule--talk">
+            <td class="schedule--name">Atividade com Mau Maker</td>
+            <td class="schedule--hour__and-local">11h às 13h<br>Espaço Oficinas</td>
+          </tr>
+          <tr class="schedule--talk">
+            <td class="schedule--name">IA Brasil</td>
+            <td class="schedule--hour__and-local">11h às 13h<br>Espaço Oficinas</td>
+          </tr>
+          <tr class="schedule--talk">
+            <td class="schedule--name">Escovando os Bits</td>
+            <td class="schedule--hour__and-local">11h às 12h30<br>Lounge Workshops</td>
+          </tr>
+        </table>        
+      </div>
+
+      <div class="schedule--catorze-horas">
+        <h2 class="schedule--hour">14:00</h2>
+        <img src="" alt="">
+        <table class="schedule--talk-block">
+          <tr class="schedule--talk">
+            <td class="schedule--name">Abertura do Palco<br>Adoniram Barbosa</td>
+            <td class="schedule--hour__and-local">14h às 14h45<br>Palco Adoniram Barbosa</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="schedule--catorze-horas-e-meia">
+        <h2 class="schedule--hour">14:30</h2>
+        <img src="" alt="">
+        <table class="schedule--talk-block">
+          <tr class="schedule--talk">
+            <td class="schedule--name">Clube do Arduíno</td>
+            <td class="schedule--hour__and-local">14h30 às 18h<br>Espaço Comunidades</td>
+          </tr>
+          <tr class="schedule--talk">
+            <td class="schedule--name">IFPS Guarulhos</td>
+            <td class="schedule--hour__and-local">14h30 às 18h<br>Espaço Comunidades</td>
+          </tr>
+          <tr class="schedule--talk">
+            <td class="schedule--name">Instituto Newton Braga</td>
+            <td class="schedule--hour__and-local">14h30 às 18h<br>Espaço Comunidades</td>
+          </tr>
+          <tr class="schedule--talk">
+            <td class="schedule--name">Automação Urbana</td>
+            <td class="schedule--hour__and-local">14h30 às 18h<br>Espaço 1</td>
+          </tr>
+          <tr class="schedule--talk">
+            <td class="schedule--name">xxxxxxxxxxxxxxx</td>
+            <td class="schedule--hour__and-local">14h30 às 18h<br>Espaço 1</td>
+          </tr>
+          <tr class="schedule--talk">
+            <td class="schedule--name">Realidade Aumentada</td>
+            <td class="schedule--hour__and-local">14h30 às 16h<br>Lounge Workshop</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="schedule--quinze-horas">
+        <h2 class="schedule--hour">15:00</h2>
+        <img src="" alt="">
+        <table class="schedule--talk-block">
+          <tr class="schedule--talk">
+            <td class="schedule--name">Inteligência Artificial</td>
+            <td class="schedule--hour__and-local">15h às 15h45<br>Palco Adoniram Barbosa</td>
+          </tr>
+          <tr class="schedule--talk">
+            <td class="schedule--name">Blockchain para Iniciantes</td>
+            <td class="schedule--hour__and-local">15h às 17h<br>Espaço Oficinas</td>
+          </tr>
+          <tr class="schedule--talk">
+            <td class="schedule--name">Maria Lab</td>
+            <td class="schedule--hour__and-local">15h às 17h<br>Espaço Oficinas</td>
+          </tr>
+          <tr class="schedule--talk">
+            <td class="schedule--name">Microscópio Caseiro</td>
+            <td class="schedule--hour__and-local">15h às 17h<br>Espaço Oficinas</td>
+          </tr>
+          <tr class="schedule--talk">
+            <td class="schedule--name">xxxxxxxxxxxxxxx</td>
+            <td class="schedule--hour__and-local">15h às 17h<br>Espaço Oficinas</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="schedule--dezesseis-horas">
+        <h2 class="schedule--hour">16:00</h2>
+        <img src="" alt="">
+        <table class="schedule--talk-block">
+          <tr class="schedule--talk">
+            <td class="schedule--name">Arte e Tecnologia</td>
+            <td class="schedule--hour__and-local">16h às 16h45<br>Palco Adoniram Barbosa</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="schedule--dezesseis-horas-e-meia">
+        <h2 class="schedule--hour">16:30</h2>
+        <img src="" alt="">
+        <table class="schedule--talk-block">
+          <tr class="schedule--talk">
+            <td class="schedule--name">Fuxico (Maria Lab)</td>
+            <td class="schedule--hour__and-local">16h30 às 18h<br>Lounge Workshop</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="schedule--dezessete-horas">
+        <h2 class="schedule--hour">17:00</h2>
+        <img src="" alt="">
+        <table class="schedule--talk-block">
+          <tr class="schedule--talk">
+            <td class="schedule--name">Educação, Ciência e Tecnologia</td>
+            <td class="schedule--hour__and-local">17h às 17h45<br>Palco Adoniram Barbosa</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="schedule--dezoito-horas">
+        <h2 class="schedule--hour">18:00</h2>
+        <img src="" alt="">
+        <table class="schedule--talk-block">
+          <tr class="schedule--talk">
+            <td class="schedule--name">Encerramento</td>
+            <td class="schedule--hour__and-local">18h às 18h45<br>Palco Adoniram Barbosa</td>
+          </tr>
+        </table>
+      </div>
+
+    </section>
+
+    <!-- MAPA -->
+    <section id="map" class="d-none d-lg-block map">
+      <h2 class="section--name map--name">Como Chegar</h2>
+      <iframe width="400" height="400;" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJq3y9T5hZzpQRtFKHj2rMllo&key=AIzaSyCP_BSt4XPXnEGwJKp_rt1Z50_w2pj1uA8" allowfullscreen></iframe>
+    </section>
+
+    <!-- INSCREVA-SE WEB -->
+    <section class="enroll">
+      <div id="sympla-widget-470240"></div> 
+      <script src="https://www.sympla.com.br/js/sympla.widget-pt.js/470240"></script>
+    </section>
+
+    <!-- SPONSORS
+    <section class="sponsors">
+      <img src="" alt="">
+    </section> -->
+
+    <!-- FOOTER -->
     <footer class="footer">
-      <span>fablab@prefeitura.sp.gov.br</span><br>
-      <span>(11)2075-2096</span>
-      <img id="logos" src="./assets/img/logo-footer.svg" alt="">                  
+      <span class="footer--email">fablab@prefeitura.sp.gov.br<br></span>
+      <span class="footer--phone">(11)2075-2096<br></span>
+      <img class="footer--logos" src="./assets/img/logo-footer.svg" alt="">                 
     </footer>
-    
-  </body>
 
-</html>
+  </body>
+</html> 
