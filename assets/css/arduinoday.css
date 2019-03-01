@@ -187,6 +187,8 @@ header .hero--arduino__countdown-text {
 
 @media(max-width: 992px) {
 
+  body { overflow-x: hidden; }
+
   header .hero--arduino__display-mobile {
     padding-top: 270px;
     width: 80%;
@@ -206,7 +208,7 @@ header .hero--arduino__countdown-text {
     font-size: 2rem;
     text-align: center;
     left: 10%;
-    top: 140px;
+    top: 160px;
     position: absolute;
   }
 
@@ -224,4 +226,15 @@ header .hero--arduino__countdown-text {
     padding-bottom: 210px;
   }
 
+}
+
+@media screen and (min-width: 1920px) {
+  
+  header .hero--arduino__countdown-text { 
+    left: 63%;
+  }
+
+  .schedule {
+    padding-top: 880px;
+  }
 }
